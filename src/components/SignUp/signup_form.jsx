@@ -1,30 +1,31 @@
 import { useState } from "react";
 import { useAuth } from "../../context/auth/auth_context";
-import { useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function SignUp({ setNewUser }) {
-    const nav = useNavigate(); //Initializing useNavigate into a variable
-    const {signUp} = useAuth();
-    const [formData, setFormData] = useState({
-        name:'',
-        email:'',
-        password:'',
-        confirmPassword:''
-    });
+  const nav = useNavigate(); //Initializing useNavigate into a variable
+  const { signUp } = useAuth();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
   async function handleSubmit(e) {
     e.preventDefault();
-    if (password != confirmPassword) {
-        alert("Passwords do not match");
+    if (formData.password != formData.confirmPassword) {
+      alert("Passwords do not match");
+    } else {
+      await signUp(formData);
+      nav("/dashboard");
     }
-    else {
-        await signUp(formData);
   }
   function handleClick() {
     setNewUser(false);
   }
-  function handleChange(e){
-    setFormData({...formData,[e.taget.name]:e.target.value})
+  function handleChange(e) {
+    setFormData({ ...formData, [e.taget.name]: e.target.value });
   }
   return (
     <div className="signup_form">
