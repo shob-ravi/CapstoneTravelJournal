@@ -12,7 +12,7 @@ function App() {
       <h2>Travel Journal</h2>
       <Routes>
         <Route path="/auth" element={<AuthPage />} />
-        <Route element={<ProtectedRoutes></ProtectedRoutes>}>
+        <Route element={<ProtectedRoutes/>}>
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
         <Route path="*" element={<h1>Not found</h1>} />

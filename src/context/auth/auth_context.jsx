@@ -31,7 +31,7 @@ export default function AuthProvider({children}){
             // take token from response and set to cookies
             setCookies('token',res.data.token);
         } catch (error) {
-            console.error(err);
+            console.error(error);
         }
     }
     // Logout function

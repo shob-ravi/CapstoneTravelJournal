@@ -25,7 +25,7 @@ function SignUp({ setNewUser }) {
     setNewUser(false);
   }
   function handleChange(e) {
-    setFormData({ ...formData, [e.taget.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   }
   return (
     <div className="signup_form">
