@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/auth/auth_context";
+import "./login_form.css";
 
 function LoginForm({ setNewUser }) {
   const nav = useNavigate();
@@ -50,8 +51,11 @@ function LoginForm({ setNewUser }) {
           </div>
           
           <button className="btn" type="submit">Login</button>
+          <div className="register-link">
+            <p>Dont have an account?<button onClick={handleClick}>Sign Up</button></p>
+          </div>
         </form>
-        <h1>Dont have an account?<button onClick={handleClick}>Sign Up</button></h1>
+        
       </div>
     </>
   );

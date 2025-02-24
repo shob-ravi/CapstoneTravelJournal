@@ -5,13 +5,15 @@ import Navbar from "./components/NavBar/navbar.jsx";
 import ProtectedRoutes from "./components/ProtectedRoutes.jsx";
 import 'boxicons/css/boxicons.min.css';
 import "./App.css";
+import HomePage from "./pages/HomePage/homePage.jsx";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <h2>Travel Journal</h2>
       <Routes>
+        <Route path="/Home" element={<HomePage />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route element={<ProtectedRoutes/>}>
           <Route path="/dashboard" element={<Dashboard />} />
