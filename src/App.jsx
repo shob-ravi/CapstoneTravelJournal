@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <h2>Travel Journal</h2>
+      {/* <h2>Travel Journal</h2> */}
       <Routes>
         <Route path="/Home" element={<HomePage />} />
         <Route path="/auth" element={<AuthPage />} />
