@@ -35,6 +35,7 @@ function LoginForm({ setNewUser }) {
             placeholder="Email"
             onChange={handleChange}
           />
+          <i className='bx bxs-user'></i>
           </div>
           {/* <label>Password:</label> */}
           <div className="inputBox">
@@ -45,6 +46,7 @@ function LoginForm({ setNewUser }) {
             placeholder="Password"
             onChange={handleChange}
           />
+          <i className='bx bxs-lock-alt'></i>
           </div>
           
           <button className="btn" type="submit">Login</button>

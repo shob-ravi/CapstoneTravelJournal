@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/dashboard.jsx";
 import Navbar from "./components/NavBar/navbar.jsx";
 import ProtectedRoutes from "./components/ProtectedRoutes.jsx";
+import 'boxicons/css/boxicons.min.css';
 import "./App.css";
 
 function App() {
