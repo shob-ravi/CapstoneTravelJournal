@@ -24,6 +24,7 @@ function LoginForm({ setNewUser }) {
 
   return (
     <>
+    <div className="loginpage">
       <div className="loginWrapper">
         <form autoComplete="off" onSubmit={handleSubmit}>
           <h1>Login</h1>
@@ -56,6 +57,7 @@ function LoginForm({ setNewUser }) {
           </div>
         </form>
         
+      </div>
       </div>
     </>
   );

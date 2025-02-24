@@ -6,7 +6,7 @@ export default function Journals({lists}){
           {lists?.map((list,index) => {
             
             return (
-              <div className="Booklist" key={index} >
+              <div className="stories" key={index} >
                 {/* <Link to={`./Categories/BookDetails/${book.key.replace("/works/","")}`}> */}
                 <h3> {list.Title}</h3>
                 <h3> {list.Description}</h3>
