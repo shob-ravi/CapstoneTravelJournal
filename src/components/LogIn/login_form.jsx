@@ -23,10 +23,11 @@ function LoginForm({ setNewUser }) {
 
   return (
     <>
-      <div>
+      <div className="loginWrapper">
         <form autoComplete="off" onSubmit={handleSubmit}>
-          <h1>Login Page</h1>
-          <label>Email:</label>
+          <h1>Login</h1>
+          {/* <label>Email:</label> */}
+          <div className="inputBox">
           <input
             type="email"
             id="email"
@@ -34,7 +35,9 @@ function LoginForm({ setNewUser }) {
             placeholder="Email"
             onChange={handleChange}
           />
-          <label>Password:</label>
+          </div>
+          {/* <label>Password:</label> */}
+          <div className="inputBox">
           <input
             type="password"
             id="password"
@@ -42,7 +45,9 @@ function LoginForm({ setNewUser }) {
             placeholder="Password"
             onChange={handleChange}
           />
-          <button type="submit">Log In</button>
+          </div>
+          
+          <button className="btn" type="submit">Login</button>
         </form>
         <h1>Dont have an account?<button onClick={handleClick}>Sign Up</button></h1>
       </div>
