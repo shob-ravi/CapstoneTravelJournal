@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/dashboard.jsx";
 import Navbar from "./components/NavBar/navbar.jsx";
 import ProtectedRoutes from "./components/ProtectedRoutes.jsx";
+import CreateJournal from "./pages/CreateJournal/createjournals.jsx";
 import 'boxicons/css/boxicons.min.css';
 import "./App.css";
 import HomePage from "./pages/HomePage/homePage.jsx";
@@ -18,6 +19,7 @@ function App() {
         <Route element={<ProtectedRoutes/>}>
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
+        <Route path="/journal" element={<CreateJournal/>}/>
         <Route path="*" element={<h1>Not found</h1>} />
       </Routes>
     </>

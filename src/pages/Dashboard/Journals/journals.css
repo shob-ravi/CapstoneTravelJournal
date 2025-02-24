@@ -1,0 +1,23 @@
+.stories{
+    position: relative;
+}
+i{
+    
+    font-size: 50px;
+    
+}
+button.icon-button {
+    background: none;
+    position: absolute;
+    right:20px;
+    top: 100%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+button.icon-button:hover {
+    color: red;
+}

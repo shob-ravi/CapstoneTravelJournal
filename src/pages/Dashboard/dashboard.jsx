@@ -1,7 +1,7 @@
 import { useAuth } from "../../context/auth/auth_context";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Journals from "./Journals";
+import Journals from "./Journals/journals.jsx";
 
 const Dashboard = () => {
   const [journals, setJournals] = useState();
@@ -38,7 +38,7 @@ const Dashboard = () => {
     getJournals();
   }, []);
   return (
-    <div>
+    <div className="dashboard">
       <h1> Only registered Users should see this page </h1>
       <Journals lists={journals}/>
       <button onClick={handleLogOut}>LogOut</button>

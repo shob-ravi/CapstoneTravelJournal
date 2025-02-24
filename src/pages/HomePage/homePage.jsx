@@ -3,7 +3,7 @@ import './homePage.css';
 export default function HomePage() {
   return (
     <div className="homePage">
-      <nav>
+      <nav className="navbar">
         <Link to="/auth">Get Started</Link>
         
       </nav>
