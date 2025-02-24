@@ -1,34 +1,37 @@
 import "./journals.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import CreateJournal from "../../CreateJournal/createjournals";
 
 export default function Journals({ lists }) {
-  const [createJournalPage, setJournalPage] = useState(false);
-  function handleClick() {
-    setJournalPage(true);
-  }
+  // const [createJournalPage, setJournalPage] = useState(false);
+  // function handleClick() {
+  //   setJournalPage(true);
+  // }
   console.log("lists" + lists?.length);
   return (
-    <div className="journals">
+    <div>
       <Link to="/journal">
-        <button className="icon-button" onClick={handleClick}>
+        <button className="icon-button" >
           <i className="bx bx-plus"></i>
         </button>
       </Link>
+    <div className="journals">
+      
+      {/* Replaces the UI with CreateJournal when clicked
+      {createJournalPage && <CreateJournal />} */}
+
       {lists?.map((list, index) => {
         return (
-          <div className="stories" key={index}>
+          <div className="card" key={list._id}>
             <h3> {list.Title}</h3>
-            <h3> {list.Description}</h3>
-            <img src={list.ImageURL} width="30%" />
-            <p>{list.Location}</p>
-
-            {/* Replaces the UI with CreateJournal when clicked */}
-            {createJournalPage && <CreateJournal />}
+            <img src={list.ImageURL} className="journalImage" />
+            <div className="container">
+            <h3> {list.Description}</h3>            
+            <p>{list.Location}</p>  
+            </div>          
           </div>
-        );
-      })}
+        );        
+      })}      
+    </div>
     </div>
   );
 }
