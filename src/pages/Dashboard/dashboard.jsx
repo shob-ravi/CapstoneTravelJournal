@@ -1,4 +1,4 @@
-import { useAuth } from "../../context/auth/auth_context";
+import { useAuth } from "../../context/auth/auth_context.jsx";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Journals from './Journals/Journals.jsx';
