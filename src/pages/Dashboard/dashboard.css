@@ -1,5 +1,25 @@
-.dashboard {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Default: 1 column */
-    gap: 16px; /* Equivalent to gap-4 */
+
+  .dashboard{
+    background: url('https://img.freepik.com/free-photo/blue-vintage-decorative-balls-background_53876-102739.jpg?ga=GA1.1.1567177787.1740355097&semt=ais_hybrid') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .dashboard h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+  .LogOutBtn{
+    /* border:solid red; */
+    margin-top: 500px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+  }
+  #logoutbtn{
+    width:30%;
+    border:solid gray;
+    text-align: center;
+    border-radius: 20px;
   }

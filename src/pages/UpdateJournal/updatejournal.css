@@ -1,0 +1,91 @@
+/* Main container styling */
+.updatejournalpage {
+    background: url('https://img.freepik.com/premium-photo/high-angle-view-airplane-flying-against-clear-sky_1048944-597826.jpg?ga=GA1.1.1567177787.1740355097&semt=ais_hybrid') no-repeat;
+      display: flex;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      align-items: center;
+      min-height: 100vh;
+      /* background: #f5f5f5; */
+      font-family: "Poppins", sans-serif;
+    }
+    
+    /* Wrapper for centering the form */
+    .updatejournalWrapper {
+      width: 90%;
+      max-width: 500px;
+      border:2px solid rgba(3, 52, 19, 0.444);
+      background: transparent;
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Form styling */
+    .updatejournalWrapper form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    /* Label styling */
+    .updatejournalWrapper .inputBox label {
+      font-weight: 300;
+      margin-bottom: 5px;
+      display: block;
+      color:rgba(7, 19, 7, 0.353) ;
+    }
+    
+    /* Input fields styling */
+    .updatejournalWrapper .inputBox input {
+      width: 100%;
+      padding: 10px;
+      /* border: 1px solid green; */
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border 0.3s ease-in-out;
+    }
+    
+    /* Input hover and focus effects */
+    .updatejournalWrapper .inputBox input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    
+    /* File upload styling */
+    .updatejournalWrapper .inputBox input[type="file"] {
+      border: none;
+    }
+    
+    /* Image preview styling */
+    .updatejournalWrapper .inputBox img {
+      margin-top: 10px;
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* No image selected message */
+    .updatejournalWrapper .inputBox p {
+      color: #888;
+      font-size: 14px;
+    }
+    
+    /* Submit button styling */
+    .updatejournalWrapper button {
+      background: rgb(74, 110, 74);
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+    
+    .updatejournalWrapper button:hover {
+      background: rgb(90, 161, 90);
+    }
+    

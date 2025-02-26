@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../../context/auth/auth_context";
 import { useNavigate } from "react-router-dom";
+import './signup_form.css';
 
 function SignUp({ setNewUser }) {
   const nav = useNavigate(); //Initializing useNavigate into a variable
@@ -29,9 +30,11 @@ function SignUp({ setNewUser }) {
   }
   return (
     <div className="signup_form">
+      <div className="signupWrapper">
       <h2>SignUp</h2>
       <form autoComplete="off" onSubmit={handleSubmit}>
-        <label>Name:</label>
+      <div className="inputBox">
+        
         <input
           type="text"
           name="name"
@@ -39,7 +42,9 @@ function SignUp({ setNewUser }) {
           placeholder="First and Last name"
           onChange={handleChange}
         />
-        <label>Email:</label>
+        </div>
+        <div className="inputBox">
+        
         <input
           type="email"
           name="email"
@@ -47,7 +52,9 @@ function SignUp({ setNewUser }) {
           placeholder="Email"
           onChange={handleChange}
         />
-        <label>Password:</label>
+        </div>
+        <div className="inputBox">
+        
         <input
           type="password"
           name="password"
@@ -55,6 +62,8 @@ function SignUp({ setNewUser }) {
           placeholder="Enter Password"
           onChange={handleChange}
         />
+        </div>
+        <div className="inputBox">
         <input
           type="password"
           name="confirmPassword"
@@ -62,11 +71,16 @@ function SignUp({ setNewUser }) {
           placeholder="Confirm Password"
           onChange={handleChange}
         />
-        <button type="submit">Sign Up</button>
-      </form>
+        </div>
+        <button className="btnSignUp" type="submit">Sign Up</button>
+      
+      <div className="register-link">
       <p>
         Already have an account? <button onClick={handleClick}>Sign In</button>
       </p>
+      </div>
+      </form>
+      </div>
     </div>
   );
 }

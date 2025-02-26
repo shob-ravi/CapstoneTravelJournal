@@ -2,6 +2,7 @@ import { useAuth } from "../../context/auth/auth_context.jsx";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Journals from './Journals/Journals.jsx';
+import "./dashboard.css";
 
 const Dashboard = () => {
   const [journals, setJournals] = useState();
@@ -40,11 +41,13 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <h1> Manage Journals </h1>
-      <div className="card">
+      <div className="lists">
       
       <Journals lists={journals}/>
       </div>
-      <button onClick={handleLogOut}>LogOut</button>
+      <div className="LogOutBtn">
+      <button id="logoutbtn" onClick={handleLogOut}>LogOut</button>
+      </div>
     </div>
   );
 };

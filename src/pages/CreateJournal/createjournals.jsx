@@ -64,15 +64,16 @@ export default function CreateJournal() {
   }
   return (
     <>
-      <div className="journalWrapper">
+    <div className="createjournalpage">
+      <div className="createjournalWrapper">
         <form autoComplete="off" onSubmit={handleSubmit}>
           <div className="inputBox">
             <label>Title</label>
             <input
               type="text"
               id="title"
-              name="Title"
-              placeholder="Title"
+              name="Title" 
+              placeholder="Enter the Title for your Journal"             
               onChange={handleChange}
             />
           </div>
@@ -81,8 +82,8 @@ export default function CreateJournal() {
             <input
               type="text"
               id="description"
-              name="Description"
-              placeholder="description"
+              name="Description" 
+              placeholder="Brief description about the place"             
               onChange={handleChange}
             />
           </div>
@@ -92,8 +93,8 @@ export default function CreateJournal() {
               type="file"
               id="image"
               name="ImageURL"
-              accept="image/*"
-              placeholder="description"
+              placeholder="Upload your travel image"
+              accept="image/*"              
               onChange={handleImageChange}
             />
             {createJournalData.Image ? (
@@ -105,7 +106,7 @@ export default function CreateJournal() {
                 />
               </div>
             ) : (
-              <p>No image seleceted</p>
+              <p>No image selected</p>
             )}
           </div>
           <div className="inputBox">
@@ -113,13 +114,14 @@ export default function CreateJournal() {
             <input
               type="text"
               id="location"
-              name="Location"
-              placeholder="location"
+              name="Location"  
+              placeholder="Enter the location you traveled"            
               onChange={handleChange}
             />
           </div>
           <button type="submit">Create Journal</button>
         </form>
+      </div>
       </div>
     </>
   );
