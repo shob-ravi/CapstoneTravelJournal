@@ -13,7 +13,7 @@ import { Navigate } from "react-router-dom";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar /> 
       {/* <h2>Travel Journal</h2> */}
       <Routes>
         {<Route path="/Home" element={<HomePage />} /> }

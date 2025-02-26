@@ -43,7 +43,7 @@ const Dashboard = () => {
       <h1> Manage Journals </h1>
       <div className="lists">
       
-      <Journals lists={journals}/>
+      <Journals lists={journals} getJournals={getJournals}/>
       </div>
       <div className="LogOutBtn">
       <button id="logoutbtn" onClick={handleLogOut}>LogOut</button>

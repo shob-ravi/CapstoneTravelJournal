@@ -1,11 +1,10 @@
 import "./journals.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
-import { useEffect, useState } from "react";
 
-export default function Journals({ lists }) {
-  const nav = useNavigate();
-  const [deletedata, setdeletedata] = useState([]);
+
+export default function Journals({ lists,getJournals }) {
+
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this journal?")) {
       console.log(`Deleting item with ID: ${id}`);
@@ -14,30 +13,17 @@ export default function Journals({ lists }) {
         let res = await axios.delete(`http://localhost:3000/api/journal/${id}`);
         const results = res.data;
         console.log("results delete" + results);
-        setdeletedata(lists.filter((test) => test._id !== id));
+       
+        getJournals();
         console.log("After Updated Lists" + lists.length);
       } catch (error) {
         console.error(error);
       }
-      // useEffect(()=>{
-      //   setdeletedata(true)
-      // },[deletedata])
-      // nav("/dashboard");
+     
     }
   };
 
-  // const nav = useNavigate();
-  // const [editFormData, setFormData] = useState({
-  //   Title: "",
-  //   Description: "",
-  //   Location: "",
-  // });
-  // function handleClick(e) {
-  //   // setFormData({ ...editFormData, [e.target.name]: e.target.value });
-  //   nav("/updateJournal/")
-  //   console.log("editFormData:" + editFormData);
-  // }
-  // console.log("lists" + lists?.length);
+ 
   return (
     <div className="wrapper">
       <div className="addBtn">

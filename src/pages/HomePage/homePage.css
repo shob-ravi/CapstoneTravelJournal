@@ -31,7 +31,7 @@
   /* border:solid green; */
 }
 /* The navbar */
-.navbar {
+.homePagenavbar {
   /* border:solid brown; */
   /* background-color: #333; */
   background-color: transparent;
@@ -40,7 +40,7 @@
 }
 
 /* Navbar links */
-.navbar a {
+.homePagenavbar a {
   float: right; 
 
   color: black;
@@ -50,7 +50,7 @@
   font-size: 17px;
 }
 
-.navbar a:hover {
+.homePagenavbar a:hover {
   background-color: #ddd;
   color: black;
 }
