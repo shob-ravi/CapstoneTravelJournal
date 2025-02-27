@@ -4,18 +4,18 @@ function Post3(){
         
         <div className='post3'>
           <img className="post3Img" 
-          src="https://images.pexels.com/photos/1051073/pexels-photo-1051073.jpeg?auto=compress&cs=tinysrgb&w=400"          ></img>
+          src="https://images.pexels.com/photos/10975803/pexels-photo-10975803.jpeg?auto=compress&cs=tinysrgb&w=600"          ></img>
           <div className="post3Info">
             <div className="post3Categories">
                 <div className="post3Category">MUSIC</div>
                 <div className="post3Category">LIFE</div>
             </div>
             <span className='post3Title'>
-                posttitle posttitle
+                Sonmarg,Kashmir
             </span>           
           </div>
           <p className='post3Desc'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque, nostrum dolore eligendi eos minima.
+          Sonamarg, which means 'meadow of gold' has, as its backdrop, snowy mountains against a cerulean sky. The Sindh meanders along here and abounds with trout and mahseer, snow trout can be caught in the main river.
           </p>
         </div>
         

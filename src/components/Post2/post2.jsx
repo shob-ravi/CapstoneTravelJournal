@@ -4,18 +4,18 @@ function Post2(){
         
         <div className='post2'>
           <img className="post2Img" 
-          src="https://images.pexels.com/photos/1051073/pexels-photo-1051073.jpeg?auto=compress&cs=tinysrgb&w=400"          ></img>
+          src="https://images.pexels.com/photos/3529692/pexels-photo-3529692.jpeg?auto=compress&cs=tinysrgb&w=600"></img>
           <div className="post2Info">
             <div className="post2Categories">
                 <div className="post2Category">MUSIC</div>
                 <div className="post2Category">LIFE</div>
             </div>
             <span className='post2Title'>
-                posttitle posttitle
+                Giraffe spotted
             </span>           
           </div>
           <p className='post2Desc'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque, nostrum dolore eligendi eos minima.
+          Masai giraffes are the tallest land mammals on Earth, with a height of up to 18 feet. They are native to eastern Africa and are known for their distinctive coat patterns and long necks. .
           </p>
         </div>
         

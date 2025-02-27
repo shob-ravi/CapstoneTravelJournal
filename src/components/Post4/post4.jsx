@@ -4,18 +4,18 @@ function Post4(){
         
         <div className='post4'>
           <img className="post4Img" 
-          src="https://images.pexels.com/photos/1051073/pexels-photo-1051073.jpeg?auto=compress&cs=tinysrgb&w=400"          ></img>
+          src="https://images.pexels.com/photos/25929086/pexels-photo-25929086/free-photo-of-sloth-hanging-on-a-tree.jpeg?auto=compress&cs=tinysrgb&w=600"          ></img>
           <div className="post4Info">
             <div className="post4Categories">
                 <div className="post4Category">MUSIC</div>
                 <div className="post4Category">LIFE</div>
             </div>
             <span className='post4Title'>
-                posttitle posttitle
+                Sloth hanging on a tree
             </span>           
           </div>
           <p className='post4Desc'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque, nostrum dolore eligendi eos minima.
+          Sloths in Costa Rica are slow-moving tree dwellers with distinctive features, including long arms, tiny ears, and beady eyes.
           </p>
         </div>
         
