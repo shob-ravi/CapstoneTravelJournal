@@ -10,16 +10,4 @@
     font-size: 25px;
     text-align: center;
   }
-  .LogOutBtn{
-    /* border:solid red; */
-    margin-top: 500px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically (if needed) */
-  }
-  #logoutbtn{
-    width:30%;
-    border:solid gray;
-    text-align: center;
-    border-radius: 20px;
-  }
+  

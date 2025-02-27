@@ -1,22 +1,15 @@
 import { useAuth } from "../../context/auth/auth_context.jsx";
-import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Journals from './Journals/Journals.jsx';
+import Journals from "./Journals/Journals.jsx";
 import "./dashboard.css";
 
 const Dashboard = () => {
   const [journals, setJournals] = useState();
-  const nav = useNavigate();
-  const { cookies, logout } = useAuth();
-
-  function handleLogOut() {
-    logout();
-    nav("/auth");
-  }
+  const { cookies } = useAuth();
 
   // const payload = JSON.parse(atob(JSON.stringify(cookies).split(".")[1]));
   // console.log('payload'+JSON.stringify(payload.user.id));
-  console.log("cookies" + JSON.stringify(cookies.token));
+  // console.log("cookies" + JSON.stringify(cookies.token));
   async function getJournals() {
     try {
       const url = "http://localhost:3000/api/journal";
@@ -42,11 +35,7 @@ const Dashboard = () => {
     <div className="dashboard">
       {/* <h1> Manage Journals </h1> */}
       <div className="lists">
-      
-      <Journals lists={journals} getJournals={getJournals}/>
-      </div>
-      <div className="LogOutBtn">
-      <button id="logoutbtn" onClick={handleLogOut}>LogOut</button>
+        <Journals lists={journals} getJournals={getJournals} />
       </div>
     </div>
   );
