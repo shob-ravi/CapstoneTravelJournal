@@ -40,7 +40,7 @@ const Dashboard = () => {
   }, []);
   return (
     <div className="dashboard">
-      <h1> Manage Journals </h1>
+      {/* <h1> Manage Journals </h1> */}
       <div className="lists">
       
       <Journals lists={journals} getJournals={getJournals}/>

@@ -1,22 +1,16 @@
 import { Link } from 'react-router-dom';
+import Posts from '../../components/Posts/posts.jsx';
+import SideBar from '../../components/SideBar/sidebar.jsx';
 import Header from '../../components/Header/header.jsx';
 import './homePage.css';
 export default function HomePage() {
   return (
-
-      
+    <>
+    <Header/>  
     <div className="home">  
-    <Header/>
-    {/* <div className='homecontainer'>       
-       
+    <Posts />
+    <SideBar />
     </div>
-     <div className="heroSection"> 
-      <nav className="hero-text">
-        <Link to="/auth">Start to Explore</Link>
-      </nav>
-    </div>
-    <div className="favorites"></div>
-    <div className="footer"></div>  */}
-   </div>
+    </>
   );
 }

@@ -1,6 +1,14 @@
 import {Link} from 'react-router-dom';
 import './navbar.css';
+import { useNavigate } from 'react-router-dom';
+
 function Navbar(){
+    function handleLogOut() {
+        const { logout } = useAuth();
+        const nav= useNavigate()
+        logout();
+        nav('/auth');
+      }
     return(
         
         <nav className='navbar'>
@@ -11,13 +19,14 @@ function Navbar(){
             <div className='topcenter'>
                 <ul className='topList'>
                 <Link to='/Home' className="topList-link">HOME</Link>
-                <Link to='/auth' className="topList-link">ABOUT</Link>
-                <Link to='/auth' className="topList-link">CONTACT</Link>
+                <Link to='/' className="topList-link">ABOUT</Link>
+                <Link to='/' className="topList-link">CONTACT</Link>
                 </ul>
             </div>
             <div className='topright'>
             <Link to='/auth' className="getstarted-link">GET STARTED</Link>
             <img className='toprightimg' src="https://png.pngtree.com/png-vector/20210902/ourmid/pngtree-get-started-poster-png-image_3852591.jpg"></img>
+            <Link className="getstarted-link"><button onClick={handleLogOut}>LOG OUT</button></Link>
             </div>
            
         </nav>
