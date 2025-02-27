@@ -9,7 +9,7 @@ const Navbar = () => {
 
   function handleLogOut() {
     logout();
-    // nav("/auth");
+    //nav("/auth");
   }
   return (
     <nav className="navbar">

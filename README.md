@@ -8,7 +8,7 @@ A web application that allows authorized users to create, update, and delete per
 This web application is designed for travelers who want to document and share their journeys in an organized and visually appealing way. The platform allows authorized users to create, update, and delete travel journals while uploading pictures to enhance each entry.
 
 **1.Key Features:**
-    **a.User Authentication & Authorization:**
+    **a.User Authentication**
       Users must sign up and log in to access the platform.
       Authentication is handled using JWT tokens, ensuring secure access.
       Only authorized users can create, edit, or delete their travel journals.      
