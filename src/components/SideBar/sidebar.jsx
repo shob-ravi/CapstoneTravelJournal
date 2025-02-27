@@ -6,9 +6,8 @@ function SideBar() {
         <span className="sidebarTitle">ABOUT ME</span>
         <img src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=400"></img>
         <p>
-          Welcome to my travel Journal,I Love Traveling. I’m Shobana, writing
-          about my visits to countries near and far. I research destinations
-          myself and that’s part of the fun
+        Hey, I’m Shobana! Welcome to my travel journal. I’m all about exploring new places, whether they’re close by or across the world. 
+        I love doing my own research—it’s part of the fun! Follow along as I share my travel adventures and the little things that make each trip awesome.
         </p>
       </div>
       <div className="sidebarItem"></div>
