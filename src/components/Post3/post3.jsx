@@ -6,10 +6,7 @@ function Post3(){
           <img className="post3Img" 
           src="https://images.pexels.com/photos/10975803/pexels-photo-10975803.jpeg?auto=compress&cs=tinysrgb&w=600"          ></img>
           <div className="post3Info">
-            <div className="post3Categories">
-                <div className="post3Category">MUSIC</div>
-                <div className="post3Category">LIFE</div>
-            </div>
+            
             <span className='post3Title'>
                 Sonmarg,Kashmir
             </span>           

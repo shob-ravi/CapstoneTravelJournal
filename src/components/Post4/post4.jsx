@@ -6,10 +6,7 @@ function Post4(){
           <img className="post4Img" 
           src="https://images.pexels.com/photos/25929086/pexels-photo-25929086/free-photo-of-sloth-hanging-on-a-tree.jpeg?auto=compress&cs=tinysrgb&w=600"          ></img>
           <div className="post4Info">
-            <div className="post4Categories">
-                <div className="post4Category">MUSIC</div>
-                <div className="post4Category">LIFE</div>
-            </div>
+            
             <span className='post4Title'>
                 Sloth hanging on a tree
             </span>           

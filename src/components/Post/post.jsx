@@ -6,10 +6,7 @@ function Post(){
           <img className="postImg" 
           src="https://images.pexels.com/photos/54514/pexels-photo-54514.jpeg?auto=compress&cs=tinysrgb&w=600"></img>
           <div className="postInfo">
-            {/* <div className="postCategories">
-                <div className="postCategory">MUSIC</div>
-                <div className="postCategory">LIFE</div>
-            </div> */}
+            
             <span className='postTitle'>
                 Masaimara
             </span>           

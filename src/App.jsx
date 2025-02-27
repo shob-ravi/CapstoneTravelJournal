@@ -14,11 +14,11 @@ function App() {
   return (
     <>
       <Navbar /> 
-      {/* <h2>Travel Journal</h2> */}
+      
       <Routes>
-        {<Route path="/Home" element={<HomePage />} /> }
-        {/* Redirect from root (/) to /auth */}
-        {/* <Route path="/" element={<Navigate to="/auth" />} /> */}
+        <Route path="/" element={<Navigate to="/Home" />} /> {/* Redirect from root to /Home */}
+        <Route path="/Home" element={<HomePage />} /> 
+       
         <Route path="/auth" element={<AuthPage />} />
         <Route element={<ProtectedRoutes />}>
           <Route path="/dashboard" element={<Dashboard />} />

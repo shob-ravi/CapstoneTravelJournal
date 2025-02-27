@@ -10,8 +10,7 @@ function Posts(){
           <Post />
           <Post2 />
           <Post3 />
-          <Post4 />
-          
+          <Post4 />       
            
         </div>
     )  
